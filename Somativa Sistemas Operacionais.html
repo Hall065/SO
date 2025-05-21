@@ -1,77 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Segurança Cibernética - Atividade</title>
+    <meta charset="UTF-8" />
+    <title>Segurança Cibernética - Estilo New York Times</title>
     <style>
-        body {
+        /* Reset básico */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #0b1e3f;
-            font-family: Arial, sans-serif;
-            color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            box-sizing: border-box;
         }
 
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            max-width: 800px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Merriweather', serif;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: justify;
         }
 
         h1 {
-            color: #0b1e3f;
+            font-family: 'UnifrakturCook', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.8em;
             text-align: center;
+            letter-spacing: 0.05em;
         }
 
         h2 {
-            color: #0b1e3f;
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            margin-top: 2.5em;
+            margin-bottom: 0.6em;
+            font-weight: 600;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.3em;
         }
 
         p {
-            line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 1.4em;
+            font-size: 1.1rem;
         }
 
         strong {
-            color: #333;
+            font-weight: 700;
         }
+
+        /* Cabeçalho fixo simples */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 12px 20px;
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #000;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Espaço para o conteúdo não ficar atrás do header */
+        main {
+            margin-top: 70px;
+        }
+
+        /* Rodapé simples */
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+            margin: 60px 0 30px 0;
+            font-style: italic;
+        }
+
+        /* Link estilo sutil */
+        a {
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        a:hover {
+            color: #555;
+        }
+
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div class="container">
-        <h1>Segurança Cibernética - Atividade</h1>
 
-        <h2>Ameaças Cibernéticas</h2>
-        <p><strong>Cenário de Phishing:</strong> Um funcionário recebe um e-mail aparentemente legítimo de seu banco, solicitando que ele clique em um link para verificar informações da conta. O link leva a uma página falsa que coleta suas credenciais. <br>
-        <strong>Explicação:</strong> Ataques de phishing enganam os usuários para que entreguem informações sensíveis. É importante desconfiar de e-mails com tom de urgência, verificar o remetente, e nunca clicar em links suspeitos sem antes confirmar sua autenticidade.</p>
+<header>
+    Segurança Cibernética - Atividade
+</header>
 
-        <p><strong>Cenário de Ransomware:</strong> Um usuário baixa um arquivo de um site desconhecido. O arquivo contém ransomware que criptografa todos os dados do computador e exige um pagamento para liberar os arquivos. <br>
-        <strong>Explicação:</strong> Baixar arquivos de fontes não confiáveis pode comprometer totalmente um sistema. É essencial manter backups regulares e utilizar antivírus para minimizar os danos de ataques como o ransomware.</p>
+<main>
+    <h1>Segurança Cibernética - Atividade</h1>
 
-        <h2>Vulnerabilidades</h2>
-        <p><strong>Cenário de Senhas Fracas:</strong> Um sistema tem várias contas de usuário com senhas simples como "123456" e "password". Um atacante usa um ataque de força bruta para acessar essas contas. <br>
-        <strong>Explicação:</strong> Senhas fracas são facilmente quebradas por ataques automatizados. Utilizar senhas fortes, únicas e com autenticação de dois fatores ajuda a proteger as contas.</p>
+    <h2>Ameaças Cibernéticas</h2>
+    <p><strong>Cenário de Phishing:</strong> Um funcionário recebe um e-mail aparentemente legítimo de seu banco, solicitando que ele clique em um link para verificar informações da conta. O link leva a uma página falsa que coleta suas credenciais. <br>
+    <strong>Explicação:</strong> Ataques de phishing enganam os usuários para que entreguem informações sensíveis. É importante desconfiar de e-mails com tom de urgência, verificar o remetente, e nunca clicar em links suspeitos sem antes confirmar sua autenticidade.</p>
 
-        <p><strong>Cenário de Software Desatualizado:</strong> Um servidor está executando uma versão antiga de um software que possui vulnerabilidades conhecidas. Um atacante explora essas vulnerabilidades para obter acesso ao servidor. <br>
-        <strong>Explicação:</strong> Softwares desatualizados representam um grande risco de segurança. É fundamental manter todos os sistemas sempre atualizados para se proteger contra falhas conhecidas.</p>
+    <p><strong>Cenário de Ransomware:</strong> Um usuário baixa um arquivo de um site desconhecido. O arquivo contém ransomware que criptografa todos os dados do computador e exige um pagamento para liberar os arquivos. <br>
+    <strong>Explicação:</strong> Baixar arquivos de fontes não confiáveis pode comprometer totalmente um sistema. É essencial manter backups regulares e utilizar antivírus para minimizar os danos de ataques como o ransomware.</p>
 
-        <h2>Engenharia Social</h2>
-        <p><strong>Cenário de Pretexting:</strong> Um atacante liga para um funcionário fingindo ser do departamento de TI e solicita informações de login para "resolver um problema urgente". O funcionário fornece as informações. <br>
-        <strong>Explicação:</strong> Engenharia social se aproveita da confiança e da pressa das pessoas. Sempre confirme a identidade de quem faz solicitações sensíveis, mesmo que pareçam urgentes.</p>
+    <h2>Vulnerabilidades</h2>
+    <p><strong>Cenário de Senhas Fracas:</strong> Um sistema tem várias contas de usuário com senhas simples como "123456" e "password". Um atacante usa um ataque de força bruta para acessar essas contas. <br>
+    <strong>Explicação:</strong> Senhas fracas são facilmente quebradas por ataques automatizados. Utilizar senhas fortes, únicas e com autenticação de dois fatores ajuda a proteger as contas.</p>
 
-        <p><strong>Cenário de Baiting:</strong> Um atacante deixa um pendrive infectado em um local público. Um funcionário conecta o pendrive ao computador, infectando o sistema com malware. <br>
-        <strong>Explicação:</strong> Nunca conectar a dispositivos desconhecidos. Políticas de segurança devem proibir o uso de mídias externas não verificadas para evitar contaminações por malware.</p>
+    <p><strong>Cenário de Software Desatualizado:</strong> Um servidor está executando uma versão antiga de um software que possui vulnerabilidades conhecidas. Um atacante explora essas vulnerabilidades para obter acesso ao servidor. <br>
+    <strong>Explicação:</strong> Softwares desatualizados representam um grande risco de segurança. É fundamental manter todos os sistemas sempre atualizados para se proteger contra falhas conhecidas.</p>
 
-        <h2>Intervenções e Respostas a Incidentes</h2>
-        <p><strong>Cenário de Violação de Dados:</strong> Uma empresa descobre que dados confidenciais de clientes foram acessados por um atacante. A equipe deve identificar a origem da violação, conter o ataque, erradicar a ameaça e recuperar os dados. <br>
-        <strong>Explicação:</strong> Ter um plano de resposta a incidentes é essencial. Isso garante agilidade na contenção, investigação e recuperação após uma violação de dados, reduzindo os impactos e protegendo os clientes.</p>
-    </div>
+    <h2>Engenharia Social</h2>
+    <p><strong>Cenário de Pretexting:</strong> Um atacante liga para um funcionário fingindo ser do departamento de TI e solicita informações de login para "resolver um problema urgente". O funcionário fornece as informações. <br>
+    <strong>Explicação:</strong> Engenharia social se aproveita da confiança e da pressa das pessoas. Sempre confirme a identidade de quem faz solicitações sensíveis, mesmo que pareçam urgentes.</p>
+
+    <p><strong>Cenário de Baiting:</strong> Um atacante deixa um pendrive infectado em um local público. Um funcionário conecta o pendrive ao computador, infectando o sistema com malware. <br>
+    <strong>Explicação:</strong> Nunca conecte dispositivos desconhecidos. Políticas de segurança devem proibir o uso de mídias externas não verificadas para evitar contaminações por malware.</p>
+
+    <h2>Intervenções e Respostas a Incidentes</h2>
+    <p><strong>Cenário de Violação de Dados:</strong> Uma empresa descobre que dados confidenciais de clientes foram acessados por um atacante. A equipe deve identificar a origem da violação, conter o ataque, erradicar a ameaça e recuperar os dados. <br>
+    <strong>Explicação:</strong> Ter um plano de resposta a incidentes é essencial. Isso garante agilidade na contenção, investigação e recuperação após uma violação de dados, reduzindo os impactos e protegendo os clientes.</p>
+</main>
+
+<footer>
+    Projeto de Segurança Cibernética - 2025
+</footer>
+
 </body>
 </html>
